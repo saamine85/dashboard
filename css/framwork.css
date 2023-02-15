@@ -1,0 +1,95 @@
+:root {
+  --blue-color: #0075ff;
+  --blue-alt-color: #0d69d5;
+  --orange-color: #f59e0b;
+  --green-color: #22c55e;
+  --red-color: #f44336;
+  --grey-color: #888;
+}
+
+/* start box  */
+
+.d-flex {
+  display: flex;
+}
+.align-center {
+  align-items: center;
+}
+
+.w-full {
+  width: 100%;
+}
+/* end box  */
+
+/* start padding ,margin  */
+
+.p-10 {
+  padding: 10px;
+}
+.p-15 {
+  padding: 15px;
+}
+.p-20 {
+  padding: 20px;
+}
+.m-10 {
+  margin: 10px;
+}
+.m-20 {
+  margin: 20px;
+}
+.mt-0 {
+  margin-top: 0;
+}
+
+/* end padding and margin  */
+
+/* start color  */
+
+.bg-white {
+  background-color: white;
+}
+.c-black {
+  color: black;
+}
+
+.active {
+  background-color: #afe5f9;
+}
+
+/*end color  */
+
+/* start position  */
+
+.p-relative {
+  position: relative;
+}
+.p-absolute {
+  position: absolute;
+}
+.rad-6 {
+  border-radius: 6px;
+}
+
+/* end position  */
+
+/* start font  */
+
+.txt-c {
+  text-align: center;
+}
+.fs-14 {
+  font-size: 14px;
+}
+
+/* end font  */
+
+/* start component  */
+
+.between-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* End component  */
