@@ -24,9 +24,21 @@ ul {
   list-style: none;
   padding: 0;
 }
-
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: var(--blue-color);
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--blue-alt-color);
+}
 .page {
-  min-height: 100vh;
+  min-height: 200vh;
   background-color: #f1f5f9;
 }
 
@@ -69,7 +81,7 @@ ul {
 }
 .sidebar ul li a:hover,
 .sidebar ul li a:active {
-  background-color: #afe5f9;
+  background-color: #dcdcdc;
 }
 .sidebar ul li a span {
   font-size: 14px;
@@ -142,4 +154,70 @@ ul {
   width: 32px;
 }
 
+.page h1 {
+  margin: 20px 20px 40px;
+}
+.page h1::before,
+.page h1::after {
+  content: "";
+  height: 3px;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+}
+.page h1::before {
+  background-color: #fff;
+  width: 120px;
+}
+.page h1::after {
+  background-color: #010101;
+  width: 40px;
+}
+
+.wrapper {
+  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+  margin-left: 20px;
+  margin-right: 20px;
+}
+@media (max-width: 767px) {
+  .wrapper {
+    grid-template-columns: minmax(200px, 1fr);
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
 /* end  content  */
+
+/* start welcome widgets  */
+.welcome {
+  overflow: hidden;
+}
+.welcome .intro img {
+  width: 170px;
+  margin-bottom: -10px;
+}
+.welcome .avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: 2px solid white;
+  padding: 2px;
+  box-shadow: 0 0 5px #ddd;
+  margin-left: 20px;
+  margin-top: -32px;
+}
+.welcome .body {
+  border-top: 2px solid #eee;
+  border-bottom: 2px solid #eee;
+}
+.welcome .body > div {
+  flex: 1;
+}
+.welcome .visit {
+  margin: 0 15px 15px auto;
+  transform: 0.3s;
+}
+.welcome .visit:hover {
+  background-color: var(--blue-alt-color);
+}
+/* end welcome widgets  */
