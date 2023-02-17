@@ -18,6 +18,7 @@
   </head>
   <body>
     <div class="page d-flex">
+      <!-- start sidebar  -->
       <div class="sidebar bg-white p-20 p-relative">
         <h3 class="p-relative txt-c mt-0">DeVsaD</h3>
         <ul>
@@ -95,7 +96,10 @@
           </li>
         </ul>
       </div>
+      <!-- end sidebar  -->
+
       <div class="content w-full">
+
         <!-- start head  -->
         <div class="head bg-white between-flex p-15">
           <div class="search p-relative">
@@ -115,15 +119,18 @@
           </div>
         </div>
         <!-- ene head  -->
+
         <h1 class="p-relative">Dashboard</h1>
         <div class="wrapper d-grid gap-20">
+
+          <!-- start welcome widget  -->
           <div class="welcome bg-white rad-10 txt-c-mobile block-mobile">
             <div class="intro p-20 d-flex space-between bg-eee">
               <div>
                 <h2 class="m-0">welcome</h2>
                 <p class="c-grey mt-5">Devsad</p>
               </div>
-              <img src="img/welcome.png" alt="" />
+              <img src="img/welcome.png" class="hide-mobile" alt="" />
             </div>
             <img src="img/avatar.png" class="avatar" alt="" />
             <div class="body txt-c d-flex p-20 mt-20 mb-20 block-mobile">
@@ -139,10 +146,235 @@
             </div>
             <a
               href="profile.html"
-              class="visit d-block fs-14 rad-6 bg-blue w-fit c-white btn-shape"
+              class="visit d-block fs-14 bg-blue w-fit c-white btn-shape"
               >Profile</a
             >
           </div>
+          <!-- end welcome widget  -->
+
+          <!-- start quick draft widget  -->
+          <div class="quick-draft p-20 bg-white rad-10">
+            <h2 class="mt-0 mb-10">Quick Draft</h2>
+            <p class="mt-0 mb-20 c-grey fs-15">Write a draft for your ideas</p>
+            <form action="">
+              <input
+                type="text"
+                class="d-block mb-20 w-full p-10 b-none bg-eee rad-6"
+                placeholder="Title"
+              />
+              <textarea
+                placeholder="Yout Thought"
+                class="d-block mb-20 w-full p-10 b-none bg-eee rad-6"
+              ></textarea>
+              <input
+                type="submit"
+                class="save d-block fs-14 bg-blue c-white w-fit b-none btn-shape"
+                value="Save"
+              />
+            </form>
+          </div>
+          <!-- end quick draft widget  -->
+          <!-- start yearly target -->
+          <div class="targets p-20 bg-white rad-10">
+            <h2 class="mt-0 mb-10">Yearly Targets</h2>
+            <p class="mt-0 mb-20 c-grey fs-15">Targets of the year</p>
+            <div class="target-row mb-20 money-blue center-flex">
+              <div class="icon center-flex">
+                <i class="fa-solid fa-dollar-sign fa-lg c-blue"></i>
+              </div>
+              <div class="details">
+                <span class="fs-14 c-grey">Money</span>
+                <span class="d-block mt-5 mb-10 fw-bold">$20.000</span>
+                <div class="progress p-relative">
+                  <span class="bg-blue money-blue" style="width: 40%">
+                    <span class="bg-blue">40%</span></span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="target-row mb-20 center-flex project-orange">
+              <div class="icon center-flex">
+                <i class="fa-solid fa-code fa-lg c-orange"></i>
+              </div>
+              <div class="details">
+                <span class="fs-14 c-grey">Projects</span>
+                <span class="d-block mt-5 mb-10 fw-bold">24</span>
+                <div class="progress p-relative">
+                  <span class="bg-orange project-orange" style="width: 60%">
+                    <span class="bg-orange">60%</span></span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="target-row mb-20 team-green center-flex">
+              <div class="icon center-flex">
+                <i class="fa-solid fa-user fa-lg c-green"></i>
+              </div>
+              <div class="details">
+                <span class="fs-14 c-grey">Team</span>
+                <span class="d-block mt-5 mb-10 fw-bold">12</span>
+                <div class="progress p-relative">
+                  <span class="bg-green team-green" style="width: 55%">
+                    <span class="bg-green">55%</span></span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end yearly target -->
+
+          <!-- start tickets  -->
+          <div class="tickets p-20 bg-white rad-10">
+            <h2 class="mt-0 mb-10">Tickets Statistics</h2>
+            <p class="mt-0 mb-20 c-grey fs-15">
+              Everything About Support Tickets
+            </p>
+            <div class="d-flex txt-c gap-20 f-wrap">
+              <div class="box p-20 rad-10 fs-13 c-grey">
+                <i
+                  class="fa-regular fa-rectangle-list fa-2x mb-10 c-orange"
+                ></i>
+                <span class="d-block c-black fw-bold fs-25 mb-5">2500</span>
+                Total
+              </div>
+              <div class="box p-20 rad-10 fs-13 c-grey">
+                <i class="fa-solid fa-spinner fa-2x mb-10 c-blue"></i>
+                <span class="d-block c-black fw-bold fs-25 mb-5">500</span>
+                Pending
+              </div>
+              <div class="box p-20 rad-10 fs-13 c-grey">
+                <i class="fa-regular fa-circle-check fa-2x mb-10 c-green"></i>
+                <span class="d-block c-black fw-bold fs-25 mb-5">1900</span>
+                Closed
+              </div>
+              <div class="box p-20 rad-10 fs-13 c-grey">
+                <i class="fa-regular fa-rectangle-xmark fa-2x mb-10 c-red"></i>
+                <span class="d-block c-black fw-bold fs-25 mb-5">100</span>
+                Deleted
+              </div>
+            </div>
+          </div>
+          <!-- end tickets  -->
+          <!-- start latest news  -->
+          <div class="news p-20 bg-white rad-10 txt-c-mobile">
+            <h2 class="mt-0 mb-10">Latest News</h2>
+            <div class="news-row d-flex align-center">
+              <img  class="rad-6 mr-15px" src="img/news-01.png" alt="">
+              <div class="info">
+                <h3>Created SASS Section</h3>
+                <p class="m-0 fs-14 c-grey">New SASS Exemples & Tutorials</p>
+              </div>
+              <div class="btn-shape bg-eee fs-13 label">3 Days Ago</div>
+            </div>
+            <div class="news-row d-flex align-center">
+              <img  class="rad-6 mr-15px" src="img/news-02.png" alt="">
+              <div class="info">
+                <h3>Created SASS Section</h3>
+                <p class="m-0 fs-14 c-grey">New SASS Exemples & Tutorials</p>
+              </div>
+              <div class="btn-shape bg-eee fs-13 label">3 Days Ago</div>
+            </div>
+            <div class="news-row d-flex align-center">
+              <img  class="rad-6 mr-15px" src="img/news-03.png" alt="">
+              <div class="info">
+                <h3>Created SASS Section</h3>
+                <p class="m-0 fs-14 c-grey">New SASS Exemples & Tutorials</p>
+              </div>
+              <div class="btn-shape bg-eee fs-13 label">3 Days Ago</div>
+            </div>
+            <div class="news-row d-flex align-center">
+              <img  class="rad-6 mr-15px" src="img/news-04.png" alt="">
+              <div class="info">
+                <h3>Created SASS Section</h3>
+                <p class="m-0 fs-14 c-grey">New SASS Exemples & Tutorials</p>
+              </div>
+              <div class="btn-shape bg-eee fs-13 label">3 Days Ago</div>
+            </div>
+            </p>
+          </div>
+          <!-- end latest news  -->
+
+          <!-- start latest tasks  -->
+          <div class="tasks p-20 bg-white rad-10">
+            <h2 class=" mt-0 mb-20">Latest Tasks</h2>
+            <div class="task-row d-flex align-center between-flex ">
+              <div class="task-details">
+                <h3 class="fs-15 mt-0 mb-5">Record One New Video</h3>
+                <p class="m-0 c-grey">Record Python Create Exe Project</p>
+              </div>
+              <i class="fa-regular fa-trash-can  delete"></i>
+            </div>  
+            <div class="task-row d-flex align-center between-flex ">
+              <div class="task-details">
+                <h3 class="fs-15 mt-0 mb-5">Write Article</h3>
+                <p class="m-0 c-grey">Write Low Level vs High Level Languages</p>
+              </div>
+              <i class="fa-regular fa-trash-can  delete"></i>
+            </div>  
+            <div class="task-row d-flex align-center between-flex ">
+              <div class="task-details">
+                <h3 class="fs-15 mt-0 mb-5">Finich Project</h3>
+                <p class="m-0 c-grey">Publish Academy Programming project</p>
+              </div>
+              <i class="fa-regular fa-trash-can  delete"></i>
+            </div>  
+            <div class="task-row d-flex align-center between-flex done ">
+              <div class="task-details">
+                <h3 class="fs-15 mt-0 mb-5"><s> Attend The Meeting</s></h3>
+                <p class="m-0 c-grey">Attend The Project Business Analysis Meeting</p>
+              </div>
+              <i class="fa-regular fa-trash-can  delete"></i>
+            </div>  
+            <div class="task-row d-flex align-center between-flex ">
+              <div class="task-details">
+                <h3 class="fs-15 mt-0 mb-5">Finish The Lesson</h3>
+                <p class="m-0 c-grey">Finish Teaching Flex Box</p>
+              </div>
+              <i class="fa-regular fa-trash-can  delete"></i>
+            </div>  
+            <div class="task-row d-flex align-center between-flex ">
+              <div class="task-details">
+                <h3 class="fs-15 mt-0 mb-5">Record One New Video</h3>
+                <p class="m-0 c-grey">Record Python Create Exe Project</p>
+              </div>
+              <i class="fa-regular fa-trash-can  delete"></i>
+            </div>  
+          </div>
+          <!-- end latest tasks  -->
+
+          <!-- start search  -->
+          <div class="search p-20 bg-white rad-10">
+            <h2 class="mt-0 mb-20">Top Search Items</h2>
+            <div class="items-head d-flex between-flex c-grey mb-10">
+              <div>Keyword</div>
+              <div>Search Count</div>
+            </div>
+            <div class="items d-flex  between-flex pt-15 pb-15 ">
+              <span>Programming</span>
+              <span class="btn-shape bg-eee fs-13">220</span>
+            </div>
+            <div class="items d-flex  between-flex pt-15 pb-15">
+              <span>Javascript</span>
+              <span class="btn-shape bg-eee fs-13">180</span>
+            </div>
+            <div class="items d-flex  between-flex pt-15 pb-15">
+              <span>Php</span>
+              <span class="btn-shape bg-eee fs-13">160</span>
+            </div>
+            <div class="items d-flex  between-flex">
+              <span>Code</span>
+              <span class="btn-shape bg-eee fs-13">145</span>
+            </div>
+            <div class="items d-flex  between-flex pt-15 pb-15">
+              <span>Design</span>
+              <span class="btn-shape bg-eee fs-13">110</span>
+            </div>
+            <div class="items d-flex  between-flex pt-15 pb-15">
+              <span>Logic</span>
+              <span class="btn-shape bg-eee fs-13">95</span>
+            </div>
+          </div>
+          <!-- end search  -->
         </div>
       </div>
     </div>
