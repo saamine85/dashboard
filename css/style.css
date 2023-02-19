@@ -495,7 +495,7 @@ ul {
   background-color: #1da1f2;
 }
 .social-media .facebook {
-  background-color:rgb(24, 119, 242,.2);
+  background-color: rgb(24, 119, 242, 0.2);
   color: #1877f2;
 }
 .social-media .facebook i,
@@ -503,7 +503,7 @@ ul {
   background-color: #1877f2;
 }
 .social-media .youtube {
-  background-color: rgb(255, 0, 0,.2);
+  background-color: rgb(255, 0, 0, 0.2);
   color: #ff0000;
 }
 .social-media .youtube i,
@@ -511,7 +511,7 @@ ul {
   background-color: #ff0000;
 }
 .social-media .linkedin {
-  background-color: rgb(0, 119, 181,.2);
+  background-color: rgb(0, 119, 181, 0.2);
   color: #0077b5;
 }
 .social-media .linkedin i,
@@ -519,3 +519,38 @@ ul {
   background-color: #0077b5;
 }
 /* start social media */
+
+/* start table-project */
+.project .responsive-table {
+  overflow-x: auto;
+}
+.project table {
+  min-width: 1000px;
+  border-spacing: 0;
+}
+.project table td {
+  padding: 15px;
+}
+.project tbody td {
+  border-bottom: 1px solid #eee;
+  border-left: 1px solid #eee;
+  transition: .3s;
+}
+.project tbody td:last-child {
+  border-right: 1px solid #eee;
+}
+.project tbody tr:hover td {
+  background-color: #faf7f7;
+}
+.project table tbody tr td img {
+  width: 30px;
+  height: 30px;
+  padding: 2px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+.project table tbody tr td img:not(:first-child) {
+  margin-left: -20px;
+}
+
+/* end table-project */
