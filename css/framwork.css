@@ -22,6 +22,9 @@
 .w-full {
   width: 100%;
 }
+.h-full {
+  height: 100%;
+}
 .w-fit {
   width: fit-content;
 }
