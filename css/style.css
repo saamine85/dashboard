@@ -71,10 +71,10 @@ ul {
   border-radius: 50%;
   border: 3px solid white;
 }
-.sidebar ul {
-}
-.sidebar ul li {
-}
+/* .sidebar ul {
+} */
+/* .sidebar ul li {
+} */
 .sidebar ul li a {
   transition: 0.3s;
   margin-bottom: 5px;
@@ -384,3 +384,90 @@ ul {
   border-bottom: 1px solid #eee;
 } */
 /* end search  */
+/* start upload */
+.uploads li:not(:last-child) {
+  border-bottom: 1px solid #eee;
+}
+.uploads .details img {
+  width: 40px;
+}
+/* end upload */
+
+/* start project-progress */
+.project-progress ul::before {
+  content: "";
+  position: absolute;
+  left: 11px;
+  width: 2px;
+  height: 200px;
+  background-color: var(--blue-color);
+}
+.project-progress ul li::before {
+  content: "";
+  /* position: absolute; */
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: white;
+  border: 2px solid rgb(250, 250, 250);
+  outline: 2px solid var(--blue-color);
+  margin-right: 10px;
+  z-index: 1;
+}
+.project-progress ul li.done::before {
+  content: "";
+  background-color: var(--blue-color);
+}
+.project-progress ul li.current::before {
+  content: "";
+  animation: change-color 0.8s infinite alternate;
+}
+.project-progress .launch-icon {
+  position: absolute;
+  width: 200px;
+  /* height: 200px; */
+  bottom: 0;
+  right: 0;
+  opacity: 0.2;
+}
+@keyframes change-color {
+  to {
+    background-color: #ccc;
+  }
+}
+/* end project-progress */
+/* start reminder  */
+.reminders ul li:not(:last-child) {
+  margin-bottom: 15px;
+}
+.reminders ul li .circle {
+  width: 15px;
+  height: 15px;
+}
+.reminders ul li > .blue {
+  border-left: 3px solid var(--blue-color);
+}
+.reminders ul li > .green {
+  border-left: 3px solid var(--green-color);
+}
+.reminders ul li > .orange {
+  border-left: 3px solid var(--orange-color);
+}
+.reminders ul li > .red {
+  border-left: 3px solid var(--red-color);
+}
+/* .reminders .details {
+  padding-left: 10px;
+} */
+
+/* start reminder  */
+/* start latest post  */
+.post img {
+  width: 50px;
+}
+.post p {
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  line-height: 1.8;
+}
+/* end latest post  */
