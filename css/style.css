@@ -534,7 +534,7 @@ ul {
 .project tbody td {
   border-bottom: 1px solid #eee;
   border-left: 1px solid #eee;
-  transition: .3s;
+  transition: 0.3s;
 }
 .project tbody td:last-child {
   border-right: 1px solid #eee;
@@ -554,3 +554,65 @@ ul {
 }
 
 /* end table-project */
+/* start settings-page  */
+.setting-page {
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+}
+@media (max-width:767px){
+  .setting-page {
+  grid-template-columns:  minmax(100px, 1fr);
+  margin-left: 10px;
+  margin-right: 10px;
+  gap: 10px;
+}
+}
+.setting-page .toggle-checkbox {
+  -webkit-appearance: none;
+  appearance: none;
+}
+.setting-page .toggle-switch {
+  width: 78px;
+  height: 32px;
+  background-color: #ccc;
+  border-radius: 16px;
+  position: relative;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.setting-page .toggle-switch::before {
+  font-family: var(--fa-style-family-classic);
+  content: "\f00d";
+  font-weight: 800;
+  position: absolute;
+  background-color: #fbfbfb;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding: 4px 8px; */
+  border-radius: 50%;
+  top: 4px;
+  left: 4px;
+  color: #aaa;
+  transition: 0.3s;
+  /* transform: rotate(20deg); */
+}
+.setting-page .toggle-checkbox:checked + .toggle-switch {
+  background-color: var(--blue-color);
+}
+.setting-page .toggle-checkbox:checked + .toggle-switch::before {
+  left: 50px;
+  content: "\f00c";
+}
+
+/* start site-control */
+.close-message {
+  resize: none;
+  border: 2px solid #eee;
+  min-height: 150px;
+}
+
+/* end site-control */
+
+/* end settings-page  */
