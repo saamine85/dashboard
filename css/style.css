@@ -930,3 +930,109 @@ ul {
   }
 }
 /* end profile-page  */
+
+/* start project page  */
+.projects-page {
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+}
+@media (max-width: 767px) {
+  .projects-page {
+    grid-template-columns: minmax(200px, 1fr);
+    margin: 0 10px;
+    gap: 10px;
+  }
+}
+.project .date {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.project h4 {
+  font-weight: normal;
+}
+.project .team {
+  position: relative;
+  min-height: 80px;
+}
+.project .team a {
+  position: absolute;
+  left: 0;
+  top: 15px;
+  transition: 0.3s;
+}
+.project .team a:nth-child(2) {
+  left: 25px;
+}
+.project .team a:nth-child(3) {
+  left: 50px;
+}
+.project .team a:nth-child(4) {
+  left: 75px;
+}
+.project .team a:nth-child(5) {
+  left: 100px;
+}
+.project .team a:hover {
+  z-index: 1000;
+  transform: scale(1.15);
+}
+.project .team a img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+.project .techs {
+  justify-content: flex-end;
+  border-top: 1px solid #eee;
+  padding-top: 15px;
+  margin-bottom: 15px;
+}
+@media (max-width: 767px) {
+  .project .team {
+    flex-direction: column;
+  }
+}
+.project .techs span {
+  padding: 3px 8px;
+  margin-left: 5px;
+  width: fit-content;
+}
+@media (max-width: 767px) {
+  .project .techs span:not(:last-child) {
+    margin-bottom: 15px;
+  }
+}
+.project .info {
+  border-top: 1px solid #eee;
+  margin-top: 15px;
+  padding-top: 15px;
+}
+@media (max-width: 767px) {
+  .project .info {
+    flex-direction: column;
+  }
+}
+@media (max-width: 767px) {
+  .project .techs {
+    flex-direction: column;
+    align-items: center;
+  }
+  .project .info .progress {
+    margin-bottom: 15px;
+  }
+}
+.project .info .progress {
+  height: 8px;
+  width: 260px;
+  position: relative;
+  border-radius: 6px;
+}
+.project .info .progress span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  border-radius: 8px;
+}
+/* end project page  */
