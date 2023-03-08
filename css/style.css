@@ -1036,3 +1036,101 @@ ul {
   border-radius: 8px;
 }
 /* end project page  */
+
+/* start courses-page  */
+.courses-page {
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+@media (max-width: 767px) {
+  .courses-page {
+    grid-template-columns: minmax(200px, 1fr);
+    margin-left: 10px;
+    margin-right: 10px;
+    gap: 10px;
+  }
+}
+.courses-page .course {
+  overflow: hidden;
+}
+.courses-page .course .cover {
+  max-width: 100%;
+}
+.courses-page .course .instructor {
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: 2px solid white;
+  top: 20px;
+  left: 20px;
+}
+.courses-page .course .description {
+  line-height: 1.6;
+}
+.courses-page .course .info {
+  border-top: 1px solid #eee;
+  font-size: 13px;
+}
+.courses-page .course .info .title {
+  position: absolute;
+  left: 50%;
+  top: -13px;
+  transform: translateX(-50%);
+  height: 27px;
+}
+/* end courses-page  */
+
+/* start friends-page  */
+.friends-page {
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+@media (max-width: 767px) {
+  .friends-page {
+    grid-template-columns: minmax(200px, 1fr);
+    margin-left: 10px;
+    margin-right: 10px;
+    gap: 10px;
+  }
+}
+.friends-page .friend img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.friends-page .friend .contact {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+.friends-page .friend .contact i {
+  background-color: #eee;
+  padding: 10px;
+  color: #666;
+  border-radius: 50%;
+  font-size: 13px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.friends-page .friend .contact i:hover {
+  background-color: var(--blue-color);
+  color: white;
+}
+.friends-page .friend .icons {
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  margin-top: 15px;
+}
+.friends-page .friend .icons i {
+  margin-right: 5px;
+}
+.friends-page .friend .icons .vip {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 40px;
+  opacity: 0.3;
+}
+.friends-page .friend {
+}
+/* end friends-page  */
