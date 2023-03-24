@@ -59,6 +59,9 @@
 .p-20 {
   padding: 20px;
 }
+.pt-10 {
+  padding-top: 15px;
+}
 .pt-15 {
   padding-top: 15px;
 }
@@ -91,6 +94,9 @@
 }
 .mt-10 {
   margin-top: 10px;
+}
+.mt-15 {
+  margin-top: 15px;
 }
 .mt-20 {
   margin-top: 20px;
@@ -199,6 +205,9 @@
 }
 .border-ccc {
   border: 1px solid #ccc;
+}
+.border-eee {
+  border: 1px solid #eee;
 }
 /* end border */
 
